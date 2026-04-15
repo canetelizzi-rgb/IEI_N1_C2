@@ -1,0 +1,33 @@
+# metodos para modificacion de cadenas de texto
+
+nombre_completo_minuscula= "elizabet cañete"
+nombre_completo_mayuscula =" ELIZABET CAÑETE"
+loren_ipsum = """is simply dummy text of the printing and typesetting industry.
+ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+   when an unknown printer took a galley of type and scrambled it to make a type specimen book. """
+
+# print(dir(nombre_completo)
+print(nombre_completo_minuscula)
+# el metodo capitalize deja en mayuscula la primera letra del texto
+print(nombre_completo.capitalize())
+# print(loren_ipsum.capitalize())
+
+# el metodo lower deja todos los caracteres en minusculas
+print(nombre_completo_mayuscula.lower)
+
+# el metodo upper deja todos los caracteres en mayusculas
+print(nombre_completo_minuscula.upper)
+
+# el metodo TITLE transforma la cadena en titulo, la primera letra de cada palabra en mayusculas 
+print(nombre_completo_minuscula.title)
+# print(loren_ipsum.title)
+
+# el metodo LEN (lenght = tamaño) permite conocer la cantidad de caracteres de un string
+print(len(nombre_completo_minuscula))
+print(len(loren_ipsum))
+
+# el metodo split permite cortar una cadena de caracteres en el caracter indicado
+nombre_split = nombre_completo_minuscula.split()
+print(nombre_split)
+
+rut_split = rut_str
