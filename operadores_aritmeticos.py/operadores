@@ -19,8 +19,8 @@ print(type(resta))
 # operador multiplicacion
 print()
 multiplicacion = numero_1 * numero_2
-print(multiplcacion)
-print(typt(division))
+print(multiplicacion)
+print(type(multiplicacion))
 
 # operador division
 print()

@@ -1,15 +1,17 @@
 # metodos para modificacion de cadenas de texto
 
+
 nombre_completo_minuscula= "elizabet cañete"
 nombre_completo_mayuscula =" ELIZABET CAÑETE"
 loren_ipsum = """is simply dummy text of the printing and typesetting industry.
  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
    when an unknown printer took a galley of type and scrambled it to make a type specimen book. """
+camion_codigo = "cami&oacute;n"
 
 # print(dir(nombre_completo)
 print(nombre_completo_minuscula)
 # el metodo capitalize deja en mayuscula la primera letra del texto
-print(nombre_completo.capitalize())
+print(nombre_completo_minuscula.capitalize())
 # print(loren_ipsum.capitalize())
 
 # el metodo lower deja todos los caracteres en minusculas
@@ -31,3 +33,14 @@ nombre_split = nombre_completo_minuscula.split()
 print(nombre_split)
 
 rut_split = rut_str
+
+# el metodo replace modifica una parte de a cadena de texto especificada por otra definida
+# replace recie 2 argumentos
+
+nombre_modificado = nombre_completo_mayuscula.replace("canete","lizzi")
+print(nombre_modificado)
+
+nombre_modificado_minusculas = nombre_completo_minuscula.replace("elizabet", "cañete")
+print(nombre_modificado_minusculas)
+
+# el metodo strip (TRim)

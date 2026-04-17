@@ -9,13 +9,13 @@ print(len(lista_animales))
 
 # el metodo append agrega un nuevo elemento al final de la lista
 
-nuevo_animal = input("agrege un nuevo animal a la lista: ")
+nuevo_animal =input('agregue un nuevo animal a la lista: ')
 lista_animales.append(nuevo_animal)
 print(len(lista_animales))
 print(lista_animales)
 
 # el metodo insert permite agregar un elemto en un lugar (indice) en un lugar especifico
-otro_animal = input(agrege un nuevo animal a la lista: )
+otro_animal = input("agrege un nuevo animal a la lista: ")
 lista_animales.insert(2,otro_animal)
 print(len(lista_animales))
 print(lista_animales)
