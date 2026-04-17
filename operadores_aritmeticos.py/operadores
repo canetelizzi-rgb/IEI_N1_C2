@@ -1,0 +1,34 @@
+# Operadores ARITMETICOS
+
+numero_1 = 45
+numero_2 = 12
+numero_3 = 0
+
+#operador suma
+print()
+suma = numero_1 + numero_2
+print(suma)
+print(type(suma))
+
+# operador resta
+print()
+resta = numero_1 - numero_2
+print(resta)
+print(type(resta))
+
+# operador multiplicacion
+print()
+multiplicacion = numero_1 * numero_2
+print(multiplcacion)
+print(typt(division))
+
+# operador division
+print()
+division = numero_1/ numero_2
+print(division)
+print(type(division))
+# print(numero_1/numero_3)
+# siempre hay que revisar que el denominador sea distianto de cero
+# una division con denominador 0 no está definida, no se puede hacer
+
+# operador suma y multiplicacion tambien se aplican sobre cadenas de texto
