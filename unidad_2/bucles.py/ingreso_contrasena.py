@@ -1,10 +1,11 @@
-# ingreso contraseña mediante ciclo for
+# Ingreso de contraseña mediante ciclo FOR
 
-contrasena ='eureka'
+contrasena = 'eureka'
 for numero in range(3):
-     contrasena_usuario = input('Ingrese contraseña: ')
+    contrasena_usuario = input('Ingrese contraseña: ')
     if contrasena_usuario == contrasena:
         print('Contraseña Correcta!')
+        break
     else:
         if numero < 2:
             print('Contraseña Incorrecta, intente nuevamente.')

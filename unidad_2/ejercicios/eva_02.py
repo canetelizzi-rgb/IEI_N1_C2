@@ -101,21 +101,39 @@ def factorial():
 # Notas: notas 
 # promedio: promedio
 # situacion final: Aprobado/reprobado
-
 # nombre_estudiante
 nombre_estudiante=input('ingrese su nombre y apellido')
 
 # nota
 notas_profesor= int(input('cuantas notas debe ingresar el estudiante?'))
 
-nota = []
+def calcular_promedio():
+    nombre_estudiante = solicitar_nombre('Ingrese nombre estudiante: ')
+    notas_estudiante = []
+    cantidad_notas = solicitar_numero('Ingrese la cantidad de notas: ')
 
-for i in range(notas_profesor+=1)
-    nota = float(f'ingrese la nota{i + 1}')
-    nota
+    contador = 1
+    while len(notas_estudiante) < cantidad_notas:
+        nota = solicitar_numero(f'Ingrese nota {contador}: ')
+        if 1 < nota <= 7.0:
+            # notas_estudiante.insert(i,nota)
+            notas_estudiante.append(nota)
+            contador += 1
 
-
-
+    promedio = sum(notas_estudiante)/len(notas_estudiante)
+    situacion_final = ''
+    if promedio >= 4.0:
+        situacion_final = 'Aprobado'
+    else:
+        situacion_final = 'Reprobado'
+    
+    resultado = f'''
+Nombre: {nombre_estudiante}
+Notas: {notas_estudiante}
+Promedio: {round(promedio,1)}
+Situación Final: {situacion_final}
+'''
+    return resultado
 
 def calcular_promedio():
     resultado = f'''
