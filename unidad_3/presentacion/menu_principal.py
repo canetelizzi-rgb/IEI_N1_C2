@@ -1,5 +1,5 @@
 from datos import numero_version,titulo_app,menu_aplicacion,sub_menu,opcion_invalida
-from negocio import obtener_listado_rifas
+from negocio import obtener_listado_rifas, obtener_listado_usuarios
 
 def menu_principal():
     print(f'\n{titulo_app} v{numero_version}')
@@ -43,6 +43,9 @@ def menu_principal():
                 if opcion_sub_menu == '0':
                     print('Volviendo al menú anterior...')
                     break
+                 elif opcion_sub_menu == '2':
+                    tabla_usuarios = obtener_listado_usuarios()
+                    print(tabla_usuarios)
                 else:
                     print(opcion_invalida)
         elif opcion == '0':

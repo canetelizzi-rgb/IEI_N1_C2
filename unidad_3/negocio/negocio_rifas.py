@@ -1,5 +1,5 @@
 from datos import listado_rifas
-from prettytable import PrettyTable
+from prettytable import Prettytable
 
 def obtener_listado_rifas():
     tabla_rifas = PrettyTable()
